@@ -65,6 +65,7 @@ class Life_Client_Core
 		class adminCarKey {};
 		class adminInvisible {};
 		class adminRevive {};
+		class adminBlindfold {};
 	};
 	
 	class Medical_System
@@ -136,6 +137,8 @@ class Life_Client_Core
 		class oildrillEmpty {};
 		class packupOildrill {};
 		class oildrillStop {};
+		class toggleVehicleDoor {};
+		class removeBlindfold {};
 	};
 	
 	class Housing
@@ -466,6 +469,7 @@ class Life_Client_Core
 		class impoundPlusMenu {};
 		class unimpoundPlus {};
 		class spawnPointCustomCfg {};
+		class gangWithdraw {};
 	};
 
 	class market
@@ -491,6 +495,16 @@ class Life_Client_Core
 	{
 		file = "core\rebel";
 		class rebLoadout {};
+		class blindfold {};
+		class blindfolded {};
+		class escortActionRebel {};
+		class stopEscortingRebel {};
+		class putInCarRebel {};
+		class restrainActionRebel {};
+		class restrainRebel {};
+		class unrestrainRebel {};
+		class pulloutActionRebel {};
+		class pullOutVehRebel {};
 	};
 	
 	class Dog
