@@ -33,7 +33,7 @@ _nearest = [];
 			{
 				_var = _x select 0;
 				
-				_index = [_var,life_drug_items] call fnc_index;
+				_index = [_var,life_drug_items] call TON_fnc_index;
 				if(_index != -1) exitWith {_nearest = _nearest + [_unit]};
 			} foreach (_inv select 0);
 		};
@@ -44,7 +44,7 @@ _nearest = [];
 			{
 				_var = _x select 0;
 				
-				_index = [_var,life_drug_items] call fnc_index;
+				_index = [_var,life_drug_items] call TON_fnc_index;
 				if(_index != -1) exitWith {_nearest = _nearest + [_unit]};
 			} foreach (_inv select 0);
 		};
@@ -56,6 +56,7 @@ _nearest = [];
 			_cnt = 0;
 			while {(isNil {_unit getVariable "hasDrugs"}) && (_cnt <= 10)} do {
 				sleep 0.2;
+                _cnt = _cnt + 1;
 			};
 			
 			if (_unit getVariable ["hasDrugs", false]) exitWith {_nearest = _nearest + [_unit]};
