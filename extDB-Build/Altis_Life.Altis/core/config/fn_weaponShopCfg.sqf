@@ -177,7 +177,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != east): {"Du bist kein Rebell!"};
-			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
+			case (!license_civ_rebel): {"Du hast kein Rebellentraining genossen!"};
 			default
 			{
 				["Mohammed's Jihadi Shop",
@@ -245,7 +245,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (!(playerSide in [civilian,east])): {"Du bist kein Zivilist!"};
-			case (!license_civ_gun): {"You don't have a Firearms license!"};
+			case (!license_civ_gun): {"Du hast keine Waffenlizenz!"};
 			default
 			{
 				["Billy Joe's Firearms",
@@ -343,7 +343,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (!(playerSide in [civilian,east])): {"You are not a civilian/rebel!"};
+			case (!(playerSide in [civilian,east])): {"Du bist kein Zivilist oder Rebele!"};
 			default
 			{
 				["Hideout Armament",
